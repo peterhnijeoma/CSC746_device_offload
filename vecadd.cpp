@@ -23,7 +23,7 @@ int main ()
 
     for (int i = 0; i < N; i++)
     {
-        x[i] 1.0f;
+        x[i] = 1.0f;
         y[i] = 2.0f;
     }
 
@@ -33,7 +33,7 @@ int main ()
     std::chrono::time_point<std::chrono::high_resolution_clock> end_time = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end_time - start_time;
 
-    std::cout << "Elapsed time is: " << elapsed.count() " sec. or " << elapsed.count()*1000 << " ms\n";
+    std::cout << "Elapsed time is: " << elapsed.count() << " sec. or " << elapsed.count()*1000 << " ms\n";
 
     // check for error - all values should be 3.0f
     float maxerror = 0.0f;
